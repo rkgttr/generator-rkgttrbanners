@@ -1,0 +1,44 @@
+{
+    "name": "<%= slugname %>",
+    "title": "<%= title %>",
+    "version": "<%= version %>",
+    "description": "<%= description %>",
+    "author": {
+        "name": "<%= author_name %>",
+        "email": "<%= author_email %>"
+    },
+    "client" : "<%= camelclient %>",
+    "project" : "<%= camelname %>",
+    "svp" : "<%= includeSVP %>",
+    "adsys" : "<%= isAdSystem %>",
+    "doubleclick" : "<%= isDoubleClick %>",
+    "sizmek" : "<%= isSizmek %>",
+    "scss" : "<%= includeSCSS %>",
+    "fonts" : "<%= includeFont %>",
+    "devDependencies": {
+        "grunt": "~0.4.2",
+        "time-grunt": "~0.2.3",
+        "grunt-contrib-imagemin": "~1.0.x",
+        "imagemin-mozjpeg": "^5.1.0",
+        "imagemin-pngquant": "^4.2.0",
+        "grunt-autoprefixer": "~0.7.x",
+        "grunt-combine-media-queries": "~1.0.19",
+        "grunt-contrib-watch": "~0.6.x",
+        "grunt-contrib-uglify": "~0.4.x",
+        "grunt-csso": "^0.8.1",<% if (includeSCSS) { %>
+        "grunt-sass": "~1.1.x",<%  } else { %>
+        "grunt-contrib-less": "~0.11.x",<%  } %>
+        "grunt-contrib-connect": "~0.8.0",
+        "connect-livereload": "~0.4.0",
+        "grunt-contrib-jade": "~0.12.0",
+        "grunt-newer": "~0.7.0",
+        "grunt-spritesmith": "^5.0.0",
+        "grunt-inline": "^0.3.6",<% if (isDoubleClick) { %>
+        "grunt-image-embed": "^0.3.3",
+        "grunt-ziti": "0.0.6",<%  } %>
+        "grunt-notify": "~0.3.0",<% if ((isAdSystem || includeSVP || includeFont )) { %>
+        "grunt-contrib-copy": "~0.7.x",<%  } %>
+        "serve-index": "~1.5.0",
+        "grunt-contrib-compress": "~0.12.0"
+    }
+}

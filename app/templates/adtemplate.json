@@ -1,0 +1,47 @@
+{
+  "templatename": "",
+  "client": "<%= camelclient %>",
+  "size": "<%= width %>x<%= height %>",
+  "templatepath": "templates/<%= slugclient %>/<%= bname %>",
+  "files": ["index.html"],
+  "usegwf": "false",
+  "global": {
+    "adsettings": {
+      "label": "Ad Settings",
+      "type": "h2",
+      "inconfig": "false"
+    },
+    "adname": {
+      "label": "Choose ad name *",
+      "type": "text",
+      "options": "",
+      "default": "PROJECT_SPECIFICITY",
+      "inconfig": "false"
+    },
+    "alt": {
+      "label": "Choose the alt image *",
+      "type": "file",
+      "options": "",
+      "default": "",
+      "slide": "1",
+      "inconfig": "false"
+    },
+    "clickthrough": {
+      "label": "clickthrough URL *",
+      "type": "text",
+      "options": "",
+      "default": "",
+      "slide": "1",
+      "inconfig": "false"
+    }
+  },
+  "slides": [{
+    "duration": {
+      "label": "Slide duration",
+      "type": "number",
+      "options": "",
+      "default": "5",
+      "inconfig": "true"
+    }
+  }]
+}

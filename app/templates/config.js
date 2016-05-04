@@ -1,0 +1,1 @@
+define({"SV":{"svData":[{"svKey":"variable1","svType":"string","value":"variable value"},{"svKey":"variable2","svType":"string","value":"variable value"}]}});

@@ -1,0 +1,6 @@
+{
+  "name": "<%= slugname %>",
+  "version": "<%= version %>",
+  "dependencies": { }
+}
+

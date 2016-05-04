@@ -1,0 +1,15 @@
+@import 'tools/normalize.less';
+@import 'base/font.less';
+@import 'base/base.less'; // you may need to change stuff in this file as it contains default you may want to override
+<% if (isDoubleClick) { %>@import 'sprite.less';<% } %>
+.preloader,
+.wrapper {
+	overflow: hidden;
+	width: <%= width %>px;
+	height: <%= height %>px;
+	background:#ccc;
+	border: 1px solid #ccc; // optional
+}
+// put your stuff here
+
+@import 'base/helpers.less';
