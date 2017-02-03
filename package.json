@@ -1,6 +1,6 @@
 {
   "name": "generator-rkgttrbanners",
-  "version": "0.2.14",
+  "version": "0.2.15",
   "description": "Yeoman generator for Sizmek/DoubleClick HTML5 Banners",
   "license": "MIT",
   "main": "app/index.js",
