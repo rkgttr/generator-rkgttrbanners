@@ -29,7 +29,7 @@ module.exports = yeoman.generators.Base.extend( {
     this.currentYear = ( new Date() ).getFullYear();
     if ( !this.options.add ) {
       // Have Yeoman greet the user.
-      this.log( yosay( 'Welcome to the marvelous Longtail HTML5 Banners generator!' ) );
+      this.log( yosay( 'Welcome to the marvelous RKGTTR HTML5 Banners generator!' ) );
 
       var prompts = [ {
         name: 'name',

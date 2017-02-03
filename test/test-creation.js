@@ -10,7 +10,7 @@ describe('longtail generator', function () {
         return done(err);
       }
 
-      this.app = helpers.createGenerator('longtail:app', [
+      this.app = helpers.createGenerator('rkgttr:app', [
         '../../app'
       ]);
       done();
